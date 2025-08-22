@@ -193,7 +193,7 @@
             color: white;
             border-top-right-radius: 6px;
             align-self: flex-end;
-            box-shadow: 0 4px 20px rgba(138, 43, 226, 0.3);
+            box-shadow: 0 4px 20px rgba(138, 43, 26, 0.3);
         }
         
         .message-time { font-size: 0.75rem; opacity: 0.7; margin-top: 8px; text-align: right; }
@@ -320,14 +320,33 @@
         
         .message-status { font-size: 0.7rem; margin-top: 4px; text-align: right; opacity: 0.7; }
         
+        /* THIS IS THE MOBILE STYLING SECTION */
         @media (max-width: 480px) {
-            .chat-container { height: 100%; border-radius: 0; max-width: 100%; }
-            body { padding: 0; }
-            .message { max-width: 85%; }
-            .chat-header { padding: 20px 20px 18px; }
-            .chat-messages { padding: 20px; }
-            .bot-avatar { width: 50px; height: 50px; font-size: 24px; }
-            .chat-header h2 { font-size: 1.4rem; }
+            .chat-container {
+                height: 100%;
+                max-width: 100%;
+                border-radius: 0;
+            }
+            body {
+                padding: 0;
+            }
+            .message {
+                max-width: 85%;
+            }
+            .chat-header {
+                padding: 20px 20px 18px;
+            }
+            .chat-messages {
+                padding: 20px;
+            }
+            .bot-avatar {
+                width: 50px;
+                height: 50px;
+                font-size: 24px;
+            }
+            .chat-header h2 {
+                font-size: 1.4rem;
+            }
         }
     </style>
 </head>
@@ -344,8 +363,8 @@
                     <i class="fas fa-robot"></i>
                 </div>
                 <div class="header-text">
-                    <h2>RAJA ChatBot <span class="status-indicator"></span></h2>
-                    <p>Powered by R A A </p>
+                    <h2>Wow ChatBot <span class="status-indicator"></span></h2>
+                    <p>Powered by Gemini</p>
                 </div>
             </div>
         </div>
@@ -405,7 +424,6 @@
                     });
 
                     if (!response.ok) {
-                        // Try to get error message from API response
                         const errorData = await response.json();
                         const errorMessage = errorData?.error?.message || `API error! status: ${response.status}`;
                         throw new Error(errorMessage);
@@ -448,11 +466,8 @@
                 const messageElement = document.createElement('div');
                 messageElement.classList.add('message', isUser ? 'user-message' : 'bot-message');
 
-                // Sanitize message content to prevent XSS. A simple replacement is used here.
-                // For production, consider a more robust library like DOMPurify.
                 const sanitizedMessage = message.replace(/</g, "&lt;").replace(/>/g, "&gt;");
                 
-                // Use innerHTML to render Markdown-like newlines
                 const messageContent = document.createElement('div');
                 messageContent.innerHTML = sanitizedMessage.replace(/\n/g, '<br>');
 
