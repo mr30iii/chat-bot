@@ -47,90 +47,20 @@
             border-radius: 50%;
         }
         
-        .bg-bubbles li:nth-child(1) {
-            left: 10%;
-            animation-delay: 0s;
-            width: 80px;
-            height: 80px;
-        }
-        
-        .bg-bubbles li:nth-child(2) {
-            left: 20%;
-            animation-delay: 2s;
-            animation-duration: 17s;
-            width: 60px;
-            height: 60px;
-        }
-        
-        .bg-bubbles li:nth-child(3) {
-            left: 25%;
-            animation-delay: 4s;
-            width: 100px;
-            height: 100px;
-        }
-        
-        .bg-bubbles li:nth-child(4) {
-            left: 40%;
-            animation-delay: 0s;
-            animation-duration: 22s;
-            width: 120px;
-            height: 120px;
-        }
-        
-        .bg-bubbles li:nth-child(5) {
-            left: 70%;
-            width: 60px;
-            height: 60px;
-        }
-        
-        .bg-bubbles li:nth-child(6) {
-            left: 80%;
-            animation-delay: 3s;
-            width: 110px;
-            height: 110px;
-        }
-        
-        .bg-bubbles li:nth-child(7) {
-            left: 32%;
-            animation-delay: 7s;
-            width: 150px;
-            height: 150px;
-        }
-        
-        .bg-bubbles li:nth-child(8) {
-            left: 55%;
-            animation-delay: 15s;
-            animation-duration: 40s;
-            width: 40px;
-            height: 40px;
-        }
-        
-        .bg-bubbles li:nth-child(9) {
-            left: 25%;
-            animation-delay: 2s;
-            animation-duration: 40s;
-            width: 20px;
-            height: 20px;
-        }
-        
-        .bg-bubbles li:nth-child(10) {
-            left: 90%;
-            animation-delay: 11s;
-            width: 90px;
-            height: 90px;
-        }
+        .bg-bubbles li:nth-child(1) { left: 10%; animation-delay: 0s; width: 80px; height: 80px; }
+        .bg-bubbles li:nth-child(2) { left: 20%; animation-delay: 2s; animation-duration: 17s; width: 60px; height: 60px; }
+        .bg-bubbles li:nth-child(3) { left: 25%; animation-delay: 4s; width: 100px; height: 100px; }
+        .bg-bubbles li:nth-child(4) { left: 40%; animation-delay: 0s; animation-duration: 22s; width: 120px; height: 120px; }
+        .bg-bubbles li:nth-child(5) { left: 70%; width: 60px; height: 60px; }
+        .bg-bubbles li:nth-child(6) { left: 80%; animation-delay: 3s; width: 110px; height: 110px; }
+        .bg-bubbles li:nth-child(7) { left: 32%; animation-delay: 7s; width: 150px; height: 150px; }
+        .bg-bubbles li:nth-child(8) { left: 55%; animation-delay: 15s; animation-duration: 40s; width: 40px; height: 40px; }
+        .bg-bubbles li:nth-child(9) { left: 25%; animation-delay: 2s; animation-duration: 40s; width: 20px; height: 20px; }
+        .bg-bubbles li:nth-child(10) { left: 90%; animation-delay: 11s; width: 90px; height: 90px; }
         
         @keyframes square {
-            0% {
-                transform: translateY(0) rotate(0deg);
-                opacity: 1;
-                border-radius: 50%;
-            }
-            100% {
-                transform: translateY(-1000px) rotate(720deg);
-                opacity: 0;
-                border-radius: 50%;
-            }
+            0% { transform: translateY(0) rotate(0deg); opacity: 1; border-radius: 50%; }
+            100% { transform: translateY(-1000px) rotate(720deg); opacity: 0; border-radius: 50%; }
         }
         
         .chat-container {
@@ -150,14 +80,8 @@
         }
         
         @keyframes containerAppear {
-            from {
-                opacity: 0;
-                transform: translateY(30px) scale(0.95);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0) scale(1);
-            }
+            from { opacity: 0; transform: translateY(30px) scale(0.95); }
+            to { opacity: 1; transform: translateY(0) scale(1); }
         }
         
         .chat-header {
@@ -192,22 +116,9 @@
             box-shadow: 0 0 25px rgba(255, 255, 255, 0.4);
         }
         
-        .header-text {
-            text-align: left;
-        }
-        
-        .chat-header h2 {
-            font-weight: 700;
-            font-size: 1.7rem;
-            letter-spacing: 0.5px;
-            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-        }
-        
-        .chat-header p {
-            font-size: 0.95rem;
-            opacity: 0.9;
-            margin-top: 5px;
-        }
+        .header-text { text-align: left; }
+        .chat-header h2 { font-weight: 700; font-size: 1.7rem; letter-spacing: 0.5px; text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); }
+        .chat-header p { font-size: 0.95rem; opacity: 0.9; margin-top: 5px; }
         
         .status-indicator {
             display: inline-block;
@@ -245,24 +156,10 @@
             background: rgba(255, 255, 255, 0.03);
         }
         
-        /* Custom scrollbar */
-        .chat-messages::-webkit-scrollbar {
-            width: 8px;
-        }
-        
-        .chat-messages::-webkit-scrollbar-track {
-            background: rgba(255, 255, 255, 0.05);
-            border-radius: 10px;
-        }
-        
-        .chat-messages::-webkit-scrollbar-thumb {
-            background: rgba(255, 255, 255, 0.2);
-            border-radius: 10px;
-        }
-        
-        .chat-messages::-webkit-scrollbar-thumb:hover {
-            background: rgba(255, 255, 255, 0.3);
-        }
+        .chat-messages::-webkit-scrollbar { width: 8px; }
+        .chat-messages::-webkit-scrollbar-track { background: rgba(255, 255, 255, 0.05); border-radius: 10px; }
+        .chat-messages::-webkit-scrollbar-thumb { background: rgba(255, 255, 255, 0.2); border-radius: 10px; }
+        .chat-messages::-webkit-scrollbar-thumb:hover { background: rgba(255, 255, 255, 0.3); }
         
         .message {
             max-width: 80%;
@@ -276,20 +173,11 @@
         }
         
         @keyframes messageAppear {
-            from {
-                opacity: 0;
-                transform: translateY(20px) scale(0.9);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0) scale(1);
-            }
+            from { opacity: 0; transform: translateY(20px) scale(0.9); }
+            to { opacity: 1; transform: translateY(0) scale(1); }
         }
         
-        .message:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
-        }
+        .message:hover { transform: translateY(-3px); box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2); }
         
         .bot-message {
             background: linear-gradient(to bottom, rgba(255, 255, 255, 0.9), rgba(245, 247, 250, 0.9));
@@ -308,37 +196,7 @@
             box-shadow: 0 4px 20px rgba(138, 43, 226, 0.3);
         }
         
-        .message-time {
-            font-size: 0.75rem;
-            opacity: 0.7;
-            margin-top: 8px;
-            text-align: right;
-        }
-        
-        .quick-replies {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-            margin-top: 15px;
-        }
-        
-        .quick-reply {
-            background: rgba(138, 43, 226, 0.15);
-            border: 1px solid rgba(138, 43, 226, 0.3);
-            border-radius: 20px;
-            padding: 10px 18px;
-            font-size: 0.9rem;
-            cursor: pointer;
-            transition: all 0.3s;
-            backdrop-filter: blur(5px);
-            color: white;
-        }
-        
-        .quick-reply:hover {
-            background: rgba(138, 43, 226, 0.3);
-            transform: translateY(-3px);
-            box-shadow: 0 5px 15px rgba(138, 43, 226, 0.3);
-        }
+        .message-time { font-size: 0.75rem; opacity: 0.7; margin-top: 8px; text-align: right; }
         
         .chat-input-container {
             padding: 20px;
@@ -375,35 +233,7 @@
             color: white;
         }
         
-        #message-input::placeholder {
-            color: rgba(255, 255, 255, 0.6);
-        }
-        
-        .action-buttons {
-            display: flex;
-            gap: 12px;
-        }
-        
-        .action-button {
-            background: transparent;
-            border: none;
-            color: rgba(255, 255, 255, 0.8);
-            font-size: 1.3rem;
-            cursor: pointer;
-            width: 45px;
-            height: 45px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            transition: all 0.3s;
-        }
-        
-        .action-button:hover {
-            background: rgba(255, 255, 255, 0.1);
-            transform: scale(1.1);
-            color: white;
-        }
+        #message-input::placeholder { color: rgba(255, 255, 255, 0.6); }
         
         #send-button {
             background: linear-gradient(to right, #8A2BE2, #4A00E0);
@@ -447,13 +277,8 @@
             animation: typing 1.4s infinite;
         }
         
-        .typing-indicator span:nth-child(2) {
-            animation-delay: 0.2s;
-        }
-        
-        .typing-indicator span:nth-child(3) {
-            animation-delay: 0.4s;
-        }
+        .typing-indicator span:nth-child(2) { animation-delay: 0.2s; }
+        .typing-indicator span:nth-child(3) { animation-delay: 0.4s; }
         
         @keyframes typing {
             0%, 100% { transform: translateY(0); }
@@ -469,9 +294,7 @@
             scrollbar-width: none;
         }
         
-        .suggestion-chips::-webkit-scrollbar {
-            display: none;
-        }
+        .suggestion-chips::-webkit-scrollbar { display: none; }
         
         .suggestion-chip {
             background: rgba(255, 255, 255, 0.1);
@@ -495,73 +318,23 @@
             border-color: transparent;
         }
         
-        /* Message status */
-        .message-status {
-            font-size: 0.7rem;
-            margin-top: 4px;
-            text-align: right;
-            opacity: 0.7;
-        }
+        .message-status { font-size: 0.7rem; margin-top: 4px; text-align: right; opacity: 0.7; }
         
-        /* Welcome animation */
-        @keyframes welcomeAnimation {
-            0% { opacity: 0; transform: scale(0.5) rotate(-10deg); }
-            100% { opacity: 1; transform: scale(1) rotate(0); }
-        }
-        
-        .welcome-message {
-            animation: welcomeAnimation 1s ease-out;
-        }
-        
-        /* Responsive design */
         @media (max-width: 480px) {
-            .chat-container {
-                height: 100%;
-                border-radius: 0;
-                max-width: 100%;
-            }
-            
-            body {
-                padding: 0;
-            }
-            
-            .message {
-                max-width: 85%;
-            }
-            
-            .chat-header {
-                padding: 20px 20px 18px;
-            }
-            
-            .chat-messages {
-                padding: 20px;
-            }
-            
-            .bot-avatar {
-                width: 50px;
-                height: 50px;
-                font-size: 24px;
-            }
-            
-            .chat-header h2 {
-                font-size: 1.4rem;
-            }
+            .chat-container { height: 100%; border-radius: 0; max-width: 100%; }
+            body { padding: 0; }
+            .message { max-width: 85%; }
+            .chat-header { padding: 20px 20px 18px; }
+            .chat-messages { padding: 20px; }
+            .bot-avatar { width: 50px; height: 50px; font-size: 24px; }
+            .chat-header h2 { font-size: 1.4rem; }
         }
     </style>
 </head>
 <body>
-    <!-- Animated background bubbles -->
     <ul class="bg-bubbles">
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
+        <li></li><li></li><li></li><li></li><li></li>
+        <li></li><li></li><li></li><li></li><li></li>
     </ul>
     
     <div class="chat-container">
@@ -571,23 +344,13 @@
                     <i class="fas fa-robot"></i>
                 </div>
                 <div class="header-text">
-                    <h2>Wow ChatBot <span class="status-indicator"></span></h2>
-                    <p>Online • Ready to amaze you</p>
+                    <h2>RAJA ChatBot <span class="status-indicator"></span></h2>
+                    <p>Powered by R A A </p>
                 </div>
             </div>
         </div>
         <div class="chat-messages" id="chat-messages">
-            <div class="message bot-message welcome-message">
-                Wow! Hello there! 👋<br>I'm here to impress you with my sleek design!
-                <div class="message-time">Just now</div>
-                
-                <div class="quick-replies">
-                    <div class="quick-reply">Show me magic</div>
-                    <div class="quick-reply">Cool features</div>
-                    <div class="quick-reply">Tell a joke</div>
-                </div>
             </div>
-        </div>
         <div class="typing-indicator" id="typing-indicator">
             <span></span>
             <span></span>
@@ -595,23 +358,13 @@
         </div>
         
         <div class="suggestion-chips">
-            <div class="suggestion-chip">✨ Amazing Features</div>
-            <div class="suggestion-chip">🎨 Beautiful Design</div>
-            <div class="suggestion-chip">🔥 Cool Animations</div>
-            <div class="suggestion-chip">💫 Glass Effect</div>
-            <div class="suggestion-chip">🌟 Wow Factor</div>
+            <div class="suggestion-chip">Tell me a fun fact</div>
+            <div class="suggestion-chip">What is Gemini?</div>
+            <div class="suggestion-chip">Suggest a good movie</div>
         </div>
         
         <div class="chat-input-container">
             <div class="chat-input">
-                <div class="action-buttons">
-                    <button class="action-button">
-                        <i class="fas fa-paperclip"></i>
-                    </button>
-                    <button class="action-button">
-                        <i class="fas fa-smile"></i>
-                    </button>
-                </div>
                 <input type="text" id="message-input" placeholder="Type a message..." autocomplete="off">
                 <button id="send-button">
                     <i class="fas fa-paper-plane"></i>
@@ -626,131 +379,128 @@
             const messageInput = document.getElementById('message-input');
             const sendButton = document.getElementById('send-button');
             const typingIndicator = document.getElementById('typing-indicator');
-            const quickReplies = document.querySelectorAll('.quick-reply');
             const suggestionChips = document.querySelectorAll('.suggestion-chip');
             
-            // Predefined bot responses
-            const botResponses = [
-                "This design is making me look awesome, don't you think?",
-                "I'm not just a pretty interface - I'm also functional!",
-                "Check out these cool animations and effects!",
-                "The glass-morphism effect is trending in 2023!",
-                "I'm designed to make you say WOW when you first see me!",
-                "This gradient background is just mesmerizing!",
-                "The attention to detail in this UI is incredible!",
-                "Notice how smooth these animations are?"
-            ];
+            // --- Step 1: Add your API Key here ---
+            // 🚨 PASTE YOUR GEMINI API KEY in the quotes below!
+            const GEMINI_API_KEY = "AIzaSyD_3VH3jct0Mx3dReekuPX4vveqQQc09Ks"; 
+            const API_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent?key=${GEMINI_API_KEY}`;
             
-            // Jokes for the "Tell a joke" quick reply
-            const jokes = [
-                "Why did the web developer leave the restaurant? Because of the table layout.",
-                "How do you comfort a JavaScript bug? You console it!",
-                "Why did the developer go broke? Because he used up all his cache!",
-                "What do you call a group of 8 Hobbits? A Hobbyte.",
-                "Why do programmers prefer dark mode? Because light attracts bugs!"
-            ];
-            
-            // Function to get current time
+            // This array will store the conversation history
+            let conversationHistory = [];
+
+            // Function to call the Gemini API
+            async function getGeminiResponse(userMessage) {
+                // Add user message to history
+                conversationHistory.push({
+                    "role": "user",
+                    "parts": [{ "text": userMessage }]
+                });
+
+                try {
+                    const response = await fetch(API_URL, {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify({ "contents": conversationHistory })
+                    });
+
+                    if (!response.ok) {
+                        // Try to get error message from API response
+                        const errorData = await response.json();
+                        const errorMessage = errorData?.error?.message || `API error! status: ${response.status}`;
+                        throw new Error(errorMessage);
+                    }
+
+                    const data = await response.json();
+                    const botResponseText = data.candidates[0].content.parts[0].text;
+                    
+                    // Add bot response to history
+                    conversationHistory.push({
+                        "role": "model",
+                        "parts": [{ "text": botResponseText }]
+                    });
+
+                    return botResponseText.trim();
+
+                } catch (error) {
+                    console.error("Error fetching from Gemini API:", error);
+                    return `Oops! Something went wrong. Please check your API key and network connection. Details: ${error.message}`;
+                }
+            }
+
+            // `botRespond` function now calls the API
+            async function botRespond(userMessage) {
+                typingIndicator.style.display = 'flex';
+                chatMessages.scrollTop = chatMessages.scrollHeight;
+
+                const response = await getGeminiResponse(userMessage);
+
+                typingIndicator.style.display = 'none';
+                addMessage(response, false);
+            }
+
             function getCurrentTime() {
                 const now = new Date();
                 return `${now.getHours()}:${now.getMinutes().toString().padStart(2, '0')}`;
             }
-            
-            // Function to add a message to the chat
+
             function addMessage(message, isUser) {
                 const messageElement = document.createElement('div');
-                messageElement.classList.add('message');
-                messageElement.classList.add(isUser ? 'user-message' : 'bot-message');
+                messageElement.classList.add('message', isUser ? 'user-message' : 'bot-message');
+
+                // Sanitize message content to prevent XSS. A simple replacement is used here.
+                // For production, consider a more robust library like DOMPurify.
+                const sanitizedMessage = message.replace(/</g, "&lt;").replace(/>/g, "&gt;");
                 
+                // Use innerHTML to render Markdown-like newlines
+                const messageContent = document.createElement('div');
+                messageContent.innerHTML = sanitizedMessage.replace(/\n/g, '<br>');
+
                 const timeElement = document.createElement('div');
                 timeElement.classList.add('message-time');
                 timeElement.textContent = getCurrentTime();
                 
-                messageElement.textContent = message;
+                messageElement.appendChild(messageContent);
                 messageElement.appendChild(timeElement);
-                
+
                 if (isUser) {
                     const statusElement = document.createElement('div');
                     statusElement.classList.add('message-status');
                     statusElement.textContent = "Delivered";
                     messageElement.appendChild(statusElement);
                 }
-                
+
                 chatMessages.appendChild(messageElement);
-                
-                // Scroll to bottom
                 chatMessages.scrollTop = chatMessages.scrollHeight;
             }
             
-            // Function to simulate bot typing and response
-            function botRespond(userMessage = "") {
-                // Show typing indicator
-                typingIndicator.style.display = 'flex';
-                chatMessages.scrollTop = chatMessages.scrollHeight;
-                
-                let response;
-                
-                // Check if user asked for a joke
-                if (userMessage.toLowerCase().includes("joke")) {
-                    response = jokes[Math.floor(Math.random() * jokes.length)];
-                } else if (userMessage.toLowerCase().includes("magic")) {
-                    response = "✨ Abracadabra! You're looking at one of the most beautiful chat interfaces! ✨";
-                } else if (userMessage.toLowerCase().includes("feature") || userMessage.toLowerCase().includes("cool")) {
-                    response = "Check out these features: ✨ Glass effect ✨ Smooth animations ✨ Gradient background ✨ Interactive elements";
-                } else {
-                    // Random response otherwise
-                    response = botResponses[Math.floor(Math.random() * botResponses.length)];
-                }
-                
-                // Response after a delay
-                setTimeout(() => {
-                    typingIndicator.style.display = 'none';
-                    addMessage(response, false);
-                }, 1500);
-            }
-            
-            // Event listener for send button
-            sendButton.addEventListener('click', function() {
+            function handleSend() {
                 const message = messageInput.value.trim();
                 if (message) {
                     addMessage(message, true);
                     messageInput.value = '';
                     botRespond(message);
                 }
+            }
+
+            sendButton.addEventListener('click', handleSend);
+            messageInput.addEventListener('keypress', (e) => {
+                if (e.key === 'Enter') handleSend();
             });
-            
-            // Event listener for Enter key
-            messageInput.addEventListener('keypress', function(e) {
-                if (e.key === 'Enter') {
-                    sendButton.click();
-                }
-            });
-            
-            // Add event listeners to quick replies
-            quickReplies.forEach(reply => {
-                reply.addEventListener('click', function() {
-                    const message = this.textContent;
-                    addMessage(message, true);
-                    botRespond(message);
-                });
-            });
-            
-            // Add event listeners to suggestion chips
+
             suggestionChips.forEach(chip => {
-                chip.addEventListener('click', function() {
-                    const message = this.textContent;
+                chip.addEventListener('click', () => {
+                    const message = chip.textContent;
                     addMessage(message, true);
                     botRespond(message);
                 });
             });
             
-            // Auto-focus input
             messageInput.focus();
-            
-            // Add initial bot message with a slight delay
+
             setTimeout(() => {
-                addMessage("This interface features glass-morphism effect, floating animations, and a stunning gradient background. What do you think?", false);
-            }, 2000);
+                addMessage("Hello! I'm your AI assistant, powered by Google Gemini. How can I help you today?", false);
+            }, 500);
         });
     </script>
 </body>
